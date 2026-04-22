@@ -1,0 +1,104 @@
+/* Orders Page Styles */
+.orders-list {
+  display: grid;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.order-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.order-header h3 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--hh-text);
+  margin: 0;
+}
+
+.status-badge {
+  padding: 8px 18px;
+  border-radius: 20px;
+  color: white;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Card Styles */
+.card {
+  background: white;
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+  border-color: var(--hh-border);
+}
+
+.order-clickable {
+  cursor: pointer;
+}
+
+.card p {
+  margin: 12px 0;
+  color: #4a5568;
+  line-height: 1.6;
+}
+
+.card p strong {
+  color: var(--hh-text);
+  font-weight: 600;
+}
+
+.order-actions {
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid var(--hh-border);
+}
+
+.btn-cancel {
+  padding: 10px 20px;
+  font-size: 0.95rem;
+}
+
+/* Empty State */
+.container > p {
+  text-align: center;
+  padding: 60px 20px;
+  color: var(--hh-text-muted);
+  font-size: 1.1rem;
+}
+
+/* Loading State */
+.container > div:first-child {
+  text-align: center;
+  padding: 60px 20px;
+  color: var(--hh-dark);
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .order-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .card {
+    padding: 20px;
+  }
+}

@@ -1,0 +1,19 @@
+/* Deprecated: kept for backwards compatibility.
+   Theme is defined in `index.css`. This file intentionally does not override UI. */
+
+:root {
+  /* Mirror key theme tokens (dark green + light green + white + black) */
+  --hh-bg: #f7faf8;
+  --hh-surface: #ffffff;
+  --hh-surface-2: #eef5f2;
+
+  --hh-text: #000000;
+  --hh-text-muted: rgba(0, 0, 0, 0.7);
+  --hh-border: rgba(29, 68, 61, 0.16);
+
+  --hh-dark: #1D443D;
+  --hh-dark-2: #2C5E53;
+  --hh-accent: #72C944;
+  --hh-accent-2: #6CD13D;
+  --hh-focus: rgba(114, 201, 68, 0.35);
+}

@@ -1,0 +1,98 @@
+.admin-dashboard-container {
+  min-height: 100vh;
+  /* Light, neutral analytics background similar to the reference */
+  background: linear-gradient(180deg, var(--hh-bg) 0%, var(--hh-surface) 60%, var(--hh-surface-2) 100%);
+  padding: 24px 32px;
+}
+
+.admin-header {
+  margin-bottom: 30px;
+}
+
+.admin-header h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, var(--hh-dark) 0%, var(--hh-accent) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 10px;
+}
+
+.admin-subtitle {
+  color: var(--hh-text-muted);
+  font-size: 1.1rem;
+}
+
+.dashboard-layout {
+  display: flex;
+  gap: 24px;
+  margin-top: 24px;
+}
+
+.dashboard-nav {
+  min-width: 250px;
+  background: var(--hh-surface);
+  padding: 20px 18px;
+  border-radius: 18px;
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.08);
+  height: fit-content;
+  position: sticky;
+  top: 20px;
+  border: 1px solid var(--hh-border);
+}
+
+.dashboard-nav a {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 14px;
+  margin-bottom: 8px;
+  color: var(--hh-text);
+  text-decoration: none;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.dashboard-nav a:hover {
+  background-color: var(--hh-surface-2);
+  transform: translateX(5px);
+}
+
+.dashboard-nav a.active {
+  background: linear-gradient(135deg, var(--hh-dark) 0%, var(--hh-dark-2) 100%);
+  color: #ffffff;
+  box-shadow: 0 10px 30px rgba(29, 68, 61, 0.28);
+}
+
+.nav-icon {
+  font-size: 1.2rem;
+}
+
+.dashboard-content {
+  flex: 1;
+  background: var(--hh-surface);
+  border-radius: 24px;
+  padding: 28px 26px;
+  box-shadow: 0 22px 55px rgba(0, 0, 0, 0.12);
+  min-height: 600px;
+  border: 1px solid var(--hh-border);
+}
+
+@media (max-width: 768px) {
+  .dashboard-layout {
+    flex-direction: column;
+  }
+
+  .dashboard-nav {
+    position: relative;
+    top: 0;
+    min-width: 100%;
+  }
+
+  .dashboard-content {
+    padding: 20px;
+  }
+}

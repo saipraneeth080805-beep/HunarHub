@@ -1,0 +1,33 @@
+.admin-login-card {
+  max-width: 500px;
+}
+
+.admin-credentials-info {
+  background: rgba(114, 201, 68, 0.14);
+  border: 1px solid rgba(114, 201, 68, 0.45);
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 25px;
+}
+
+.info-text {
+  margin: 8px 0;
+  color: var(--hh-text);
+  font-size: 0.95rem;
+}
+
+.info-text code {
+  background: var(--hh-surface);
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-family: 'Courier New', monospace;
+  font-weight: 600;
+  color: var(--hh-dark);
+  border: 1px solid var(--hh-border);
+}
+
+.info-text strong {
+  color: var(--hh-dark);
+  display: block;
+  margin-bottom: 8px;
+}

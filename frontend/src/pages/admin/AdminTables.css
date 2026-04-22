@@ -1,0 +1,108 @@
+.admin-section-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 18px;
+}
+
+.admin-section-header h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--hh-dark);
+  margin: 0;
+}
+
+.admin-section-subtitle {
+  font-size: 0.9rem;
+  color: var(--hh-text-muted);
+}
+
+.admin-table-wrapper {
+  background: #ffffff;
+  border-radius: 18px;
+  border: 1px solid var(--hh-border);
+  box-shadow: 0 18px 45px rgba(15, 23, 42, 0.06);
+  padding: 16px 18px;
+  overflow-x: auto;
+}
+
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.92rem;
+}
+
+.admin-table thead {
+  background: linear-gradient(90deg, #f7fafc 0%, #edf2f7 100%);
+}
+
+.admin-table th,
+.admin-table td {
+  padding: 10px 14px;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.admin-table th {
+  font-weight: 600;
+  color: #4a5568;
+  border-bottom: 1px solid #e2e8f0;
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.admin-table tbody tr:nth-child(even) {
+  background-color: #f9fafb;
+}
+
+.admin-table tbody tr:hover {
+  background-color: #edf2ff;
+}
+
+.admin-table td {
+  color: #2d3748;
+  border-bottom: 1px solid #edf2f7;
+}
+
+.admin-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.admin-badge.role-customer {
+  background-color: #ebf8ff;
+  color: #2b6cb0;
+}
+
+.admin-badge.role-entrepreneur {
+  background-color: #f0fff4;
+  color: #2f855a;
+}
+
+.admin-badge.role-admin {
+  background-color: #fff5f5;
+  color: #c53030;
+}
+
+.admin-badge.status-approved {
+  background-color: #f0fff4;
+  color: #2f855a;
+}
+
+.admin-badge.status-pending {
+  background-color: #fffff0;
+  color: #b7791f;
+}
+
+.admin-badge.status-rejected {
+  background-color: #fff5f5;
+  color: #c53030;
+}
+

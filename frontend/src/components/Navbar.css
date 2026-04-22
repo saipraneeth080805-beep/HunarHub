@@ -1,0 +1,118 @@
+.navbar {
+  background-color: var(--hh-dark);
+  color: #ffffff;
+  padding: 0;
+  width: 100%;
+  margin: 0;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 100%;
+  padding: 15px 30px;
+  margin: 0;
+  background-color: var(--hh-dark);
+}
+
+/* Brand */
+
+.navbar-brand {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 24px;
+  font-weight: 600;
+  color: #ffffff;
+  text-decoration: none;
+  letter-spacing: 0.12em;
+}
+
+/* Menu */
+
+.navbar-menu {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.navbar-menu a {
+  font-family: 'Lato', sans-serif;
+  font-weight: 600;
+  font-size: 0.85rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.92);
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 10px;
+  background-color: transparent;
+  border: 1px solid transparent;
+}
+
+.navbar-menu a:hover {
+  background-color: rgba(114, 201, 68, 0.18);
+  color: #ffffff;
+}
+
+/* “Hello, user” link */
+
+.navbar-user {
+  color: #ffffff;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 999px;
+  background-color: rgba(255, 255, 255, 0.10);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+.navbar-user:hover {
+  background-color: rgba(114, 201, 68, 0.18);
+}
+
+/* Cart */
+
+.navbar-cart {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 999px;
+  background-color: rgba(255, 255, 255, 0.10);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.navbar-cart:hover {
+  background-color: rgba(114, 201, 68, 0.18);
+}
+
+/* Cart badge */
+
+.cart-badge {
+  background-color: var(--hh-accent);
+  color: var(--hh-dark);
+  font-size: 0.75rem;
+  padding: 2px 6px;
+  border-radius: 10px;
+  font-weight: 700;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+/* Admin link */
+
+.admin-link {
+  color: var(--hh-dark) !important;
+  font-weight: 700 !important;
+  border: 1px solid var(--hh-accent);
+  padding: 8px 14px !important;
+  border-radius: 999px;
+  background-color: var(--hh-accent);
+}
+
+.admin-link:hover {
+  background-color: var(--hh-accent-2) !important;
+  border-color: var(--hh-accent-2) !important;
+}

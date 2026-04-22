@@ -1,0 +1,128 @@
+/* Import shared auth styles */
+@import './Login.css';
+
+.register-card-expanded {
+  max-width: 600px;
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+}
+
+.form-row .form-group {
+  flex: 1;
+}
+
+.form-select {
+  width: 100%;
+  padding: 14px 18px;
+  border: 2px solid var(--hh-border);
+  border-radius: 12px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  background: var(--hh-surface);
+  color: var(--hh-text);
+  cursor: pointer;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%231D443D' d='M6 9L1 4h10z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 18px center;
+  padding-right: 45px;
+}
+
+.form-select:focus {
+  outline: none;
+  border-color: var(--hh-accent);
+  background-color: var(--hh-surface);
+  box-shadow: 0 0 0 4px var(--hh-focus);
+}
+
+.form-textarea {
+  width: 100%;
+  padding: 14px 18px;
+  border: 2px solid var(--hh-border);
+  border-radius: 12px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  background: var(--hh-surface);
+  color: var(--hh-text);
+  font-family: inherit;
+  resize: vertical;
+  min-height: 100px;
+  box-sizing: border-box;
+}
+
+.form-textarea:focus {
+  outline: none;
+  border-color: var(--hh-accent);
+  background: var(--hh-surface);
+  box-shadow: 0 0 0 4px var(--hh-focus);
+}
+
+.form-textarea::placeholder {
+  color: rgba(0, 0, 0, 0.45);
+}
+
+.entrepreneur-fields {
+  margin-top: 30px;
+  padding-top: 30px;
+  border-top: 2px solid var(--hh-border);
+  animation: slideDown 0.4s ease-out;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.section-divider {
+  text-align: center;
+  margin-bottom: 24px;
+  position: relative;
+}
+
+.section-divider::before,
+.section-divider::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 30%;
+  height: 1px;
+  background: var(--hh-border);
+}
+
+.section-divider::before {
+  left: 0;
+}
+
+.section-divider::after {
+  right: 0;
+}
+
+.section-divider span {
+  background: var(--hh-surface);
+  padding: 0 15px;
+  color: var(--hh-dark);
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 768px) {
+  .form-row {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .register-card-expanded {
+    max-width: 100%;
+  }
+}

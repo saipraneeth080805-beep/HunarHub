@@ -1,0 +1,178 @@
+.analytics-container {
+  width: 100%;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 24px;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 18px;
+  margin-bottom: 32px;
+}
+
+.stat-card {
+  background: #ffffff;
+  padding: 20px 18px;
+  border-radius: 18px;
+  color: #111827;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.06);
+  border: 1px solid #e5e7eb;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 24px 55px rgba(15, 23, 42, 0.1);
+}
+
+.stat-card.revenue {
+  border-color: #fecaca;
+}
+
+.stat-card.dispute {
+  border-color: #facc15;
+}
+
+.stat-icon {
+  font-size: 1.8rem;
+  width: 44px;
+  height: 44px;
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(circle at 30% 20%, var(--hh-surface-2), var(--hh-accent));
+  color: #ffffff;
+}
+
+.stat-content h3 {
+  font-size: 0.9rem;
+  font-weight: 600;
+  opacity: 0.9;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.stat-value {
+  font-size: 2rem;
+  font-weight: 800;
+  margin: 0;
+}
+
+.stat-subtext {
+  font-size: 0.85rem;
+  opacity: 0.8;
+  margin-top: 5px;
+  margin: 0;
+}
+
+.chart-section {
+  margin-bottom: 32px;
+  background: #ffffff;
+  padding: 22px 20px;
+  border-radius: 18px;
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.05);
+  border: 1px solid #e5e7eb;
+}
+
+.chart-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 16px;
+}
+
+.chart-bars {
+  display: flex;
+  align-items: flex-end;
+  gap: 18px;
+  min-height: 180px;
+}
+
+.chart-bar-item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.chart-bar-graph {
+  width: 26px;
+  border-radius: 999px 999px 6px 6px;
+  background: linear-gradient(135deg, var(--hh-dark) 0%, var(--hh-accent) 100%);
+  box-shadow: 0 10px 25px rgba(29, 68, 61, 0.25);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  position: relative;
+}
+
+.chart-bar-graph.dispute-bar {
+  background: linear-gradient(135deg, var(--hh-accent) 0%, var(--hh-dark-2) 100%);
+}
+
+.chart-bar-value {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 4px;
+}
+
+.chart-bar-label {
+  margin-top: 10px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--hh-text-muted);
+  text-transform: capitalize;
+}
+
+.loading-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+  text-align: center;
+}
+
+.loading-spinner {
+  width: 50px;
+  height: 50px;
+  border: 4px solid var(--hh-border);
+  border-top-color: var(--hh-border);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-bottom: 20px;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 768px) {
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .chart-bar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .bar-label {
+    min-width: auto;
+  }
+}
