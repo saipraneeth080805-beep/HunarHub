@@ -1,20 +1,21 @@
 import axios from 'axios';
 import { toast } from 'react-toastify';
 
-// ✅ Vite uses import.meta.env, NOT process.env
+// ✅ THIS is the correct variable name for Create React App
 const api = axios.create({
-  baseURL: import.meta.env.VITE_API_URL
-    ? `${import.meta.env.VITE_API_URL}/api`
+  baseURL: process.env.REACT_APP_API_URL
+    ? `${process.env.REACT_APP_API_URL}/api`
     : 'http://localhost:8080/api',
+  headers: {
+    'Content-Type': 'application/json',
+  },
 });
 
-// Add token to requests if available
 const token = localStorage.getItem('token');
 if (token) {
   api.defaults.headers.common['Authorization'] = `Bearer ${token}`;
 }
 
-// Add response interceptor to handle errors
 api.interceptors.response.use(
   (response) => response,
   (error) => {
